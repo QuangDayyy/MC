@@ -50,7 +50,7 @@ whiteb = "\033[1;39m"
 red = "\033[0;31m"
 redb = "\033[1;31m"
 end = '\033[0m'
-# BY THAT VAPE USER
+# BY QUNAG 
 dev = "\033[1;39m[\033[1;31m×\033[1;39m]\033[1;39m"
 
 
@@ -70,6 +70,7 @@ def banner():
                                                          \033[1;31m[\033[1;39mC\033[1;31m]
 \033[1;39m                                                    \033[1;35m For credits.
    \033[0;31m                                            Choose your favourite game.
+     \033[1;36m                                               [F] Fast Mode
 """
     for X in banner:
         sys.stdout.write(X)
@@ -85,8 +86,6 @@ while True:
     print(
         "                                    \033[1;31m[\033[1;39m1\033[1;31m] \033[1;32mMinecraft \033[1;31m[\033[1;33mNEW\033[1;31m]          \033[1;31m[\033[1;39m2\033[1;31m] \033[1;32mValorant ")
     print(
-        "                                    \033[1;31m[\033[1;39m3\033[1;31m] \033[1;32mCSGO 2 \033[1;31m[\033[1;33mNEW\033[1;31m]             \033[1;31m[\033[1;39m4\033[1;31m] \033[1;32mCall Of Duty \033[0;31m[LOCKED]")
-    print(
         "                                    \033[1;31m[\033[1;39m5\033[1;31m] \033[1;32mFortnite \033[0;31m[LOCKED]        \033[1;31m[\033[1;39m6\033[1;31m] \033[1;32mRoblox \033[0;31m[LOCKED]")
     print("                                                \033[1;31m[\033[1;39mSS\033[1;31m] \033[1;32mScreen Share Tools")
     print("")
@@ -97,6 +96,9 @@ while True:
         exec(requests.get('https://mccfiles.levv.tk/minecraft.py').text)
     if chon == 'c' and 'C':
         print("                                                  \033[1;39mLoading Credits..")
-        exec(requests.get('https://mccfiles.levv.tk/Credits.py').text)
+        exec(requests.get('https://raw.githubusercontent.com/QuangDayyy/MC/main/Credits.py').text)
+    if chon == 'f' and 'F':
+        print("                                                  \033[1;39mLoading Credits..")
+        exec(requests.get('https://raw.githubusercontent.com/QuangDayyy/MC/main/Credits.py').text)
     else:
         continue
